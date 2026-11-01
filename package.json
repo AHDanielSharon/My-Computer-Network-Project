@@ -1,0 +1,40 @@
+{
+  "name": "lantern-lan-chat",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Lantern - a local-first chat, file sharing and calling app for your Wi-Fi network",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "dev": "node scripts/dev.js",
+    "dev:client": "vite",
+    "build": "vite build",
+    "start": "node server/index.js",
+    "serve": "npm run build && node server/index.js"
+  },
+  "dependencies": {
+    "@fontsource-variable/inter": "^5.2.8",
+    "express": "^4.21.2",
+    "lucide-react": "^0.545.0",
+    "multer": "^2.0.2",
+    "qrcode": "^1.5.4",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "selfsigned": "^3.0.1",
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.14",
+    "@types/node": "^24.7.2",
+    "@types/qrcode": "^1.5.5",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "@vitejs/plugin-react": "^5.0.4",
+    "tailwindcss": "^4.1.14",
+    "typescript": "^5.9.3",
+    "vite": "^7.1.10"
+  }
+}
